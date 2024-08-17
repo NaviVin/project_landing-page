@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header end */
+
+.first-box {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* first box end */
+
+.second-box {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* second box end */
+
+.third-box {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* third box end */
+
+.fourth-box {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* fourth box end */
+
+.footer {
+    margin: 10px;
+    border: 2px solid black;
+}
+
