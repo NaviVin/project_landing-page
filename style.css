@@ -3,65 +3,138 @@ body {
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
-    margin: 10px;
-    border: 2px solid black;
+    margin: 0;
+    padding: 0 150px;
     display: flex;
     justify-content: space-between;
+    background-color: #1f2937;
+    align-items: center;
+    
 }
 
 .logo {
-
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 900;
 }
+
 
 ul {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 16px;
+   
+    
 }
 
 li {
     list-style-type: none;
+    
 }
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 /* header end */
 
-.first-box {
-    margin: 10px;
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* container end */
+
+.box1 {
+    margin: 0;
+    padding: 75px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+}
+
+.title-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    font-style: extra;
+    text-align: left;
+}
+
+.text-title {
+    display: flex;
+    flex-wrap: wrap;
+    color: #e5e7eb;
+    text-align: left;
+}
+
+
+.button-one {
+    background-color: #3882f6;
+    color: white;
+}
+
+.image-placeholder {
+    display: flex;
+    flex: 1;
     border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
+    background-color: #7a7d83;
 }
 
 /* first box end */
 
-.second-box {
-    margin: 10px;
+.box2 {
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
 }
 
 /* second box end */
 
-.third-box {
-    margin: 10px;
+.box3 {
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
 }
 
 /* third box end */
 
-.fourth-box {
-    margin: 10px;
+.box4 {
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
+    
 }
 
 /* fourth box end */
 
 .footer {
-    margin: 10px;
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
 }
+
+
+
+/* this is trying to use flex */
 
