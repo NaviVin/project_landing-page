@@ -1,21 +1,30 @@
-body {
+html, body {
+    height: 100%;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: space-between;
     margin: 0;
-    padding: 0;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-.header {
-    margin: 0;
-    padding: 0 150px;
+
+.header  {
+    display: flex;
+    background-color: #1f2937;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inside-header {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
     align-items: center;
-    
+    width: 1000px;
+    padding: 20px;
 }
 
 .logo {
@@ -29,9 +38,7 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 16px;
-   
-    
+    gap: 18px;
 }
 
 li {
@@ -43,7 +50,12 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+    transition: background-color 0.3s;
 }
+
+a:hover {
+    color: #3882f6;
+} 
 
 /* header end */
 
@@ -56,17 +68,27 @@ a {
 /* container end */
 
 .box1 {
-    margin: 0;
-    padding: 75px 150px;
     display: flex;
-    justify-content: space-between;
     background-color: #1f2937;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-box1 {
+    margin: 0;
+    display: flex;
+    gap: 35px;
+    width: 1000px;
+    height: 200px;
 }
 
 .title-box {
     display: flex;
-    flex: 1;
     flex-direction: column;
+    width: 500px;
+    height: 100px;
+    
 }
 
 .title {
@@ -74,7 +96,6 @@ a {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
-    font-style: extra;
     text-align: left;
 }
 
@@ -89,16 +110,32 @@ a {
 .button-one {
     background-color: #3882f6;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.image-placeholder {
+.button-one:hover {
+    background-color: #085858;
+}
+
+.image-placeholder img{
     display: flex;
     flex: 1;
-    border: 2px solid black;
     align-items: center;
     justify-content: center;
     color: #e5e7eb;
     background-color: #7a7d83;
+    width: 500px;
+    height: 200px;
 }
 
 /* first box end */
@@ -106,35 +143,152 @@ a {
 .box2 {
     margin: 0;
     padding: 0;
-    border: 2px solid black;
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+}
+.header2-container {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 {
+    font-size: 36px;
+    color: #1f2937; 
+    font-weight: 900;
+}
+
+.box-container {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    justify-content: center;
+}
+
+.small-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 75%;
+    gap: 5px;
+    
+}
+
+.small-image img{
+    border: 5px solid #3882f6;
+    border-radius: 10px;   
+    display: flex;
+    flex: 1;
+    width: 150px;
+    height: 175px;
+}
+.text {
+    font-size: 16px;
+    color: #1f2937;
 }
 
 /* second box end */
 
-.box3 {
+.box3-container {
     margin: 0;
     padding: 0;
-    border: 2px solid black;
+    min-height: 300px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    width: 800px;
+}
+
+.qoute {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+    color: #1f2937;
+    
+}
+.name {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: right;
 }
 
 /* third box end */
 
+.box4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
 .box4 {
-    margin: 0;
-    padding: 0;
-    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    background-color: #3882f6;
+    border-radius: 6px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-box4 {
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
     
+}
+.text-inside-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bold {
+    font-size: 20px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+.not-bold {
+    font-size: 16px;
+    color: #f9faf8;
+}
+
+.button-two {
+    background-color: #3882f6;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid white;
+}
+
+.button-two:hover {
+    background-color: #085858;
 }
 
 /* fourth box end */
 
 .footer {
-    margin: 0;
-    padding: 0;
-    border: 2px solid black;
+    display: flex;
+    color: #f9faf8;
+    background-color: #1f2937;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px ;
 }
-
-
-
-/* this is trying to use flex */
 
